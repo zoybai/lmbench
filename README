@@ -1,3 +1,12 @@
+This version of lmbench is specifically targeted for RHEL8 and its clones.
+However, there is another way of installing lmbench on RHEL8:
+dnf install https://rpmfind.net/linux/dag/redhat/el7/en/x86_64/dag/RPMS/lmbench-3.0-0.a7.1.el7.rf.x86_64.rpm
+
+Enjoy,
+Zoy
+
+====== The original README ======
+
 README for lmbench 2alpha8 net release.
 
 To run the benchmark, you should be able to say:
