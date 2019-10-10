@@ -7,6 +7,10 @@
  * Bits of this are derived from work by Ethan Solomita.
  */
 
+#ifdef __linux__
+#define __USE_FILE_OFFSET64
+#endif
+
 #include	<stdio.h>
 #include	<sys/types.h>
 #include	<unistd.h>
@@ -289,9 +293,7 @@ int
 seekto(int fd, uint64 off)
 {
 #ifdef	__linux__
-	extern	loff_t llseek(int, loff_t, int);
-
-	if (llseek(fd, (loff_t)off, SEEK_SET) == (loff_t)-1) {
+	if (lseek(fd, (loff_t)off, SEEK_SET) == (loff_t)-1) {
 		return(-1);
 	}
 	return (0);
