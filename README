@@ -1,9 +1,17 @@
+====== New README ======
+
 This version of lmbench is specifically targeted for RHEL8 and its clones.
-However, there is another way of installing lmbench on RHEL8:
+Before building from source, please install libtirpc-devel by "dnf install libtirpc-devel".
+Please read https://fedoraproject.org/wiki/Changes/SunRPCRemoval for the reasons.
+
+However, there is still another way of installing lmbench on RHEL8 by using RHEL7 rpm:
 dnf install https://rpmfind.net/linux/dag/redhat/el7/en/x86_64/dag/RPMS/lmbench-3.0-0.a7.1.el7.rf.x86_64.rpm
+
+Both methods work on latest AMD64 system.
 
 Enjoy,
 Zoy
+2019.10.10.
 
 ====== The original README ======
 
